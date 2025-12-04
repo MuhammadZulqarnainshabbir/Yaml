@@ -1,0 +1,19 @@
+name: Zy Pipeline
+
+on:
+  push:
+    branches: [dev]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print build message
+        run: echo "Hello from GitHub Actions!"
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print test message
+        run: echo "Hello from GitHub Actions!"
