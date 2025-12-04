@@ -17,3 +17,10 @@ jobs:
     steps:
       - name: Print test message
         run: echo "Hello from GitHub Actions!"
+
+  matrix_Jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print this message
+        run: echo "Hello from the matrix job"
+
